@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotdog Rating App</title>
+<body>
+<% @hotdogs.each do |hotdog| %>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h2 class="panel-title"><%=hotdog.name %></h2>
+		</div>
+			<div class="panel-body">
+				<p><%= hotdog.description %></p>
+				<p>Price: <%= number_to_currency(hotdog.price) %></p>
+				<div>
+				</div> 
+				<% end %>
+
+          </body>
+</html>
